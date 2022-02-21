@@ -1,0 +1,13 @@
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  vertical-align: baseline;
+  color: #000;
+  line-height: 1.5;
+}
