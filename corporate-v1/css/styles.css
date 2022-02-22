@@ -203,9 +203,17 @@
 
 /*--------------- Global CSS ---------------*/
 :root {
-  --primary-color: #e64b3b;
-  --secondary-color: #2d81d7;
-  --secondary-color-2: #33495d;
+  --primary-color: #e74c3c;
+  --secondary-color: #2d82d8;
+  --secondary-color-2: #34495e;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -237,25 +245,25 @@ h1 {
 
 h2 {
   color: #555;
-  font-size: var(--step-5);
+  font-size: var(--step-4);
   line-height: var(--space-2xl);
 }
 
 h3 {
   color: #333;
-  font-size: var(--step-5);
+  font-size: var(--step-3);
   line-height: var(--space-xl);
 }
 
 h4 {
   color: #333;
-  font-size: var(--step-5);
+  font-size: var(--step-2);
   line-height: var(--space-l);
 }
 
 h5 {
   color: #333;
-  font-size: var(--step-5);
+  font-size: var(--step-1);
   line-height: var(--space-s);
 }
 
@@ -263,13 +271,11 @@ a {
   color: var(--secondary-color);
 }
 
-strong,
-.bold {
+strong {
   font-weight: 600;
 }
 
-em,
-.italic {
+em {
   font-style: italic;
 }
 
@@ -283,9 +289,16 @@ small,
   font-size: var(--step--2);
   line-height: var(--space-2xs);
 }
-
+ul,
+ol {
+  list-style: none;
+}
 .button {
   color: #fff;
+}
+
+.wrapper {
+  display: grid;
 }
 
 .button-primary {
@@ -298,4 +311,101 @@ small,
 
 .button-secondary-2 {
   background-color: var(--secondary-color-2);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 75rem;
+}
+
+.top-bar,
+.main-nagigation,
+.header,
+.section,
+.footer {
+  width: 100%;
+  padding: 3vw 5vw;
+  justify-items: center;
+  display: grid;
+}
+
+article {
+  display: grid;
+}
+
+/*--------------- Topbar and main-navigation ---------------*/
+.top-bar {
+  display: grid;
+  background-color: #33495d;
+  padding: 2rem 5vw;
+  width: 100%;
+  justify-content: stretch;
+}
+
+.top-bar__wrapper {
+  /*grid-auto-flow: column;
+  justify-content: space-between;*/
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.main-nagigation {
+  display: grid;
+}
+
+.main-navigation__list-links {
+  display: grid;
+  grid-gap: 1rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.top-bar__main-navigation__link {
+  text-decoration: none;
+  color: #fff;
+  vertical-align: sub;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.top-bar__main-navigation__link:hover,
+.top-bar__main-navigation__link:active,
+.top-bar__main-navigation__link:focus {
+  color: var(--primary-color);
+}
+
+@media all and (min-width: 35rem) {
+  .top-bar {
+    height: 7rem;
+    justify-content: stretch;
+    padding: 0 5vw;
+  }
+
+  .main-navigation__list-links {
+    padding-top: 0;
+    grid-auto-flow: column;
+  }
+}
+
+@media all and (min-width: 60rem) {
+  .top-bar {
+    height: 7rem;
+    justify-content: stretch;
+    padding: 0 5vw;
+  }
+
+  .top-bar__wrapper {
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+
+  .main-navigation__list-links {
+    padding-top: 0;
+    grid-auto-flow: column;
+  }
 }

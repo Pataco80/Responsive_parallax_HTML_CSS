@@ -6,58 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Corporate</title>
   </head>
   <body>
-    <header class="header">
-      <img
-        class="site-logo header__site-logo"
-        src="./images/logo.png"
-        alt="logo Corporate"
-      />
-      <h1 class="site-title header__site-title">Corporate</h1>
-      <nav class="main-navigation header__main-navigation">
-        <ul class="main-navigation__list-links">
-          <li class="list-links__item">
-            <a class="list-links__item__link" href="home">Homme</a>
-          </li>
-          <li>
-            <a class="list-links__item__link" href="services">Services</a>
-          </li>
-          <li><a class="list-links__item__link" href="works">Our Works</a></li>
-          <li><a class="list-links__item__link" href="team">Team</a></li>
-          <li>
-            <a class="list-links__item__link" href="testimonials"
-              >Testimonials</a
-            >
-          </li>
-          <li><a class="list-links__item__link" href="contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <p>main content</p>
-      <section id="home" class="section">
-        <p>Section Home</p>
+    <div class="top-bar">
+      <div class="wrapper top-bar__wrapper">
+        <img
+          class="site-logo header__site-logo"
+          src="./images/logo.png"
+          alt="logo Corporate"
+        />
+        <nav class="main-navigation top-bar__main-navigation">
+          <ul class="main-navigation__list-links">
+            <li class="top-bar__main-navigation__link-item">
+              <a class="top-bar__main-navigation__link" href="home"
+                ><i class="fa fa-home"></i
+              ></a>
+            </li>
+            <li class="top-bar__main-navigation__link-item">
+              <a class="top-bar__main-navigation__link" href="services"
+                >Services</a
+              >
+            </li>
+            <li class="top-bar__main-navigation__link-item">
+              <a class="top-bar__main-navigation__link" href="works"
+                >Our Works</a
+              >
+            </li>
+            <li class="top-bar__main-navigation__link-item">
+              <a class="top-bar__main-navigation__link" href="team">Team</a>
+            </li>
+            <li class="top-bar__main-navigation__link-item">
+              <a class="top-bar__main-navigation__link" href="testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="top-bar__main-navigation__link-item">
+              <a class="top-bar__main-navigation__link" href="contact"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header class="header"></header>
+    <main class="main-content">
+      <section id="home" class="section-home">
+        <div class="wrapper">
+          <h2>Section Home</h2>
+        </div>
       </section>
-      <section id="services" class="section">
-        <h2>Our Services</h2>
+      <section id="services" class="section-services">
+        <div class="wrapper">
+          <h2>Our Services</h2>
+        </div>
       </section>
-      <section id="works" class="section">
-        <h2>Our Works</h2>
+      <section id="works" class="section-works">
+        <div class="wrapper">
+          <h2>Our Works</h2>
+        </div>
       </section>
-      <section id="team" class="section">
-        <h2>Our Team</h2>
+      <section id="team" class="section-team">
+        <div class="wrapper">
+          <h2>Our Team</h2>
+        </div>
       </section>
-      <section id="testimonials" class="section">
-        <h2>Our Testimonials</h2>
+      <section id="testimonials" class="section-testimonials">
+        <div class="wrapper">
+          <h2>Our Testimonials</h2>
+        </div>
       </section>
-      <section id="blog" class="section">
-        <h2>Recent Posts from Blog</h2>
+      <section id="blog" class="section-blog">
+        <div class="wrapper">
+          <h2>Recent Posts from Blog</h2>
+        </div>
       </section>
-      <section id="contact" class="section">
-        <h2>Contact Us</h2>
+      <section id="contact" class="section-contact">
+        <div class="wrapper">
+          <h2>Contact Us</h2>
+        </div>
       </section>
     </main>
     <footer>
